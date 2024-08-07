@@ -1,17 +1,17 @@
 WP_URL=hece.42.fr
 WP_TITLE=wordpress
 
-WP_ADMIN_LOGIN=authorizedperson
-WP_ADMIN_PASSWORD=authorized
-WP_ADMIN_EMAIL=auth@42.fr
+WP_ADMIN_LOGIN=superuser
+WP_ADMIN_PASSWORD=superuser
+WP_ADMIN_EMAIL=superuser@42.fr
 
-WP_USER_LOGIN=normaluser
-WP_USER_PASSWORD=normal
-WP_USER_EMAIL=normal@42.fr
+WP_USER_LOGIN=hece
+WP_USER_PASSWORD=12345
+WP_USER_EMAIL=hece@42.fr
 
 MYSQL_DATABASE=wordpress
-MYSQL_USER=normaldb4
-MYSQL_PASSWORD=normaldb2
+MYSQL_USER=hece
+MYSQL_PASSWORD=12345
 MYSQL_DB_HOST=mariadb
 
 COUNTRY=TR
