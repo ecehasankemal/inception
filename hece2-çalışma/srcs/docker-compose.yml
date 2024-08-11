@@ -1,3 +1,19 @@
+volumes:
+  wp:
+    driver: local
+    name: wp
+    driver_opts:
+      type: none
+      o: bind
+      device: ${HOME}/data/wordpress
+  db:
+    driver: local
+    name: db
+    driver_opts:
+      type: none
+      o: bind
+      device: ${HOME}/data/mariadb
+
 services:
   mariadb:
     container_name: mariadb
@@ -37,22 +53,6 @@ services:
     restart: on-failure
     env_file:
       - .env
-
-volumes:
-  wp:
-    driver: local
-    name: wp
-    driver_opts:
-      type: none
-      o: bind
-      device: ${HOME}/data/wordpress
-  db:
-    driver: local
-    name: db
-    driver_opts:
-      type: none
-      o: bind
-      device: ${HOME}/data/mariadb
 
 networks:
   inception-network:
